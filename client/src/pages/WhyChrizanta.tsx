@@ -31,7 +31,7 @@ export default function WhyChrizanta() {
       <Header />
 
       <main className="pt-20">
-        <section className="relative py-20 md:py-24">
+        <section className="relative py-16 md:py-24">
           <div className="absolute inset-0 z-0">
             <img src={eventImg} alt="Premium event catering by Chrizanta" loading="eager" decoding="async" className="w-full h-full object-cover object-center" />
             <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/75 to-primary/50" />
@@ -42,7 +42,7 @@ export default function WhyChrizanta() {
                 <Star className="w-4 h-4 text-secondary fill-secondary" />
                 Why Chrizanta Caterers
               </p>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl leading-tight mb-5">A Catering Partner Built on Trust, Credentials, and Hotel-Grade Experience.</h1>
+              <h1 className="text-3xl sm:text-5xl md:text-6xl leading-tight mb-5">A Catering Partner Built on Trust, Credentials, and Hotel-Grade Experience.</h1>
               <p className="text-white/85 text-base sm:text-lg max-w-2xl">
                 Chrizanta Caterers combines premium taste, disciplined service, and operations expertise from leading hospitality brands to deliver events that run smoothly from first guest to final course.
               </p>
@@ -53,9 +53,9 @@ export default function WhyChrizanta() {
         <section className="py-16 md:py-20 bg-background">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-              <div className="lg:col-span-7 bg-white rounded-3xl border border-border shadow-sm p-7 sm:p-10">
+              <div className="lg:col-span-7 bg-white rounded-3xl border border-border shadow-sm p-5 sm:p-10">
                 <h2 className="text-3xl sm:text-4xl text-primary mb-4">What Makes Chrizanta Different</h2>
-                <p className="text-muted-foreground text-lg leading-relaxed mb-8">
+                <p className="text-muted-foreground text-base sm:text-lg leading-relaxed mb-8">
                   Every event is managed with the same discipline expected in top hotels: thoughtful planning, consistent food quality, and guest-focused execution.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -83,7 +83,7 @@ export default function WhyChrizanta() {
               </div>
 
               <aside className="lg:col-span-5 space-y-5">
-                <div className="bg-primary text-primary-foreground rounded-3xl p-7 sm:p-8 shadow-lg">
+                <div className="bg-primary text-primary-foreground rounded-3xl p-5 sm:p-8 shadow-lg">
                   <h3 className="text-2xl mb-5">Business Credentials</h3>
                   <ul className="space-y-4 text-primary-foreground/90">
                     <li className="flex items-start gap-3">
@@ -115,7 +115,7 @@ export default function WhyChrizanta() {
                 <div className="rounded-3xl overflow-hidden border border-border shadow-sm">
                   <img src={biryaniImg} alt="Signature Chrizanta cuisine" loading="lazy" decoding="async" className="w-full h-64 object-cover" />
                   <div className="p-6 bg-white">
-                    <p className="text-primary text-lg leading-relaxed">
+                    <p className="text-primary text-base sm:text-lg leading-relaxed">
                       From menu curation to final service, the team focuses on clean presentation, punctual operations, and memorable flavors.
                     </p>
                   </div>
@@ -129,13 +129,13 @@ export default function WhyChrizanta() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl mb-10">
               <h2 className="text-3xl sm:text-4xl text-primary mb-4">Leadership Profile: Mr. Peter Aruldass</h2>
-              <p className="text-muted-foreground text-lg leading-relaxed">
+              <p className="text-muted-foreground text-base sm:text-lg leading-relaxed">
                 Mr Peter Aruldass brings deep hotel-industry experience across banquet management, restaurant operations, guest services, and F&amp;B leadership, with a profile shaped by The Chancery Pavilion, Capitol (Kempinski), Royal Orchid &amp; Regenta, and multiple Taj Group properties.
               </p>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-              <div className="lg:col-span-8 bg-white rounded-3xl border border-border p-7 sm:p-10 shadow-sm">
+              <div className="lg:col-span-8 bg-white rounded-3xl border border-border p-5 sm:p-10 shadow-sm">
                 <h3 className="text-2xl text-primary mb-6">Hotel & Operations Experience</h3>
                 <ul className="space-y-4">
                   {experienceHighlights.map((highlight) => (
@@ -155,10 +155,6 @@ export default function WhyChrizanta() {
                       <GraduationCap className="w-5 h-5 text-secondary mt-0.5 shrink-0" />
                       <span>Went to St. Aloysius High School, Cox Town, Bangalore</span>
                     </li>
-                    <li className="flex gap-3">
-                      <GraduationCap className="w-5 h-5 text-secondary mt-0.5 shrink-0" />
-                      <span>Goes to St. Anthony&apos;s Boys High School</span>
-                    </li>
                   </ul>
                 </div>
                 <div className="bg-white rounded-3xl border border-border p-6 shadow-sm">
@@ -177,12 +173,12 @@ export default function WhyChrizanta() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-4xl text-center mx-auto">
               <h2 className="text-3xl sm:text-5xl mb-5">Choose Chrizanta for Your Next Event</h2>
-              <p className="text-primary-foreground/80 text-lg mb-8">
+              <p className="text-primary-foreground/80 text-base sm:text-lg mb-8">
                 If you want hotel-grade discipline, dependable food quality, and a team that understands large-event execution, Chrizanta Caterers is built for that standard.
               </p>
               <a
                 href="/#contact"
-                className="inline-flex items-center justify-center rounded-full bg-secondary px-8 py-4 text-primary font-semibold hover:bg-white transition-colors"
+                className="inline-flex w-full sm:w-auto items-center justify-center rounded-full bg-secondary px-8 py-4 text-primary font-semibold hover:bg-white transition-colors"
               >
                 Plan With Chrizanta
               </a>

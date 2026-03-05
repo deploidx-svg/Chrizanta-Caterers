@@ -90,7 +90,7 @@ export default function Header() {
           }`}
         />
         <nav
-          className={`absolute right-0 top-0 h-full w-[88%] max-w-sm bg-background border-l border-border/60 shadow-2xl px-4 py-5 flex flex-col gap-2 transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          className={`absolute right-0 top-0 h-full w-[88%] max-w-sm bg-background border-l border-border/60 shadow-2xl px-4 py-5 pb-24 flex flex-col gap-2 overflow-y-auto transition-all duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
             mobileMenuOpen ? "translate-x-0 opacity-100 scale-100" : "translate-x-full opacity-0 scale-[0.98]"
           }`}
         >

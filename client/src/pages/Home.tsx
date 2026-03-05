@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useState } from "react";
 import { ArrowRight, Star, ChefHat, UtensilsCrossed, CalendarCheck, Quote, Phone, MapPin, User, PartyPopper, Users, ChevronDown, MessageCircle, Award } from "lucide-react";
-import southIndianImg from "@/assets/images/south-indian-thali.jpg";
+import southIndianImg from "@/assets/images/rmjkg64_indian-food_625x300_25_July_23.webp";
 import beegaraOotaImg from "@/assets/images/beegara-oota.jpg";
 import biryaniImg from "@/assets/images/biryani.jpg";
 import eventImg from "@/assets/images/event-setup.jpg";
@@ -314,9 +314,9 @@ export default function Home() {
     <div className="min-h-screen bg-background font-sans overflow-x-hidden">
       <Header />
       
-      <main className="pb-24 sm:pb-0">
+      <main className="pb-28 sm:pb-0">
         {/* HERO SECTION */}
-        <section className="relative h-[90vh] min-h-[620px] sm:min-h-[600px] flex items-center pt-20 sm:pt-20">
+        <section className="relative h-[90vh] min-h-[540px] sm:min-h-[600px] flex items-center pt-20 sm:pt-20">
           <div className="absolute inset-0 z-0">
             <img 
               src={eventImg} 
@@ -336,7 +336,7 @@ export default function Home() {
                 <span className="text-xs sm:text-sm font-medium tracking-wide leading-tight">Highly Rated Event Caterers in Bengaluru</span>
               </div>
               
-              <h1 className="text-[2.1rem] sm:text-5xl md:text-7xl font-serif font-medium leading-tight mb-4 sm:mb-6 animate-in slide-in-from-bottom-8 duration-700 delay-150 fade-in fill-mode-both">
+              <h1 className="text-[1.95rem] sm:text-5xl md:text-7xl font-serif font-medium leading-tight mb-4 sm:mb-6 animate-in slide-in-from-bottom-8 duration-700 delay-150 fade-in fill-mode-both">
                 Crafting Culinary <br />
                 <span className="text-secondary italic">Memories.</span>
               </h1>
@@ -372,7 +372,7 @@ export default function Home() {
         </section>
 
         {/* ABOUT SECTION */}
-        <section id="about" className="py-16 md:py-24 bg-background relative">
+        <section id="about" className="scroll-mt-24 py-16 md:py-24 bg-background relative">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-center">
               <div className="relative">
@@ -423,7 +423,7 @@ export default function Home() {
         </section>
 
         {/* SERVICES / MENU HIGHLIGHTS */}
-        <section id="services" className="py-16 md:py-24 bg-primary text-primary-foreground">
+        <section id="services" className="scroll-mt-24 py-16 md:py-24 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
               <h4 className="text-secondary font-semibold tracking-widest uppercase text-sm mb-3">Our Offerings</h4>
@@ -433,7 +433,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
               {/* Service 1 */}
               <div className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:bg-white/10 transition-colors duration-300">
                 <div className="aspect-[4/3] overflow-hidden">
@@ -448,11 +448,11 @@ export default function Home() {
               {/* Service 2 */}
               <div className="group rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:bg-white/10 transition-colors duration-300">
                 <div className="aspect-[4/3] overflow-hidden">
-                  <img src={southIndianImg} alt="Authentic South Indian thali" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                  <img src={southIndianImg} alt="Authentic Indian feast" loading="lazy" decoding="async" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="p-6 sm:p-8">
-                  <h3 className="font-serif text-xl sm:text-2xl mb-3">Authentic South Indian</h3>
-                  <p className="text-primary-foreground/70 mb-4">Traditional vegetarian feasts and thalis prepared with the freshest ingredients and time-honored recipes.</p>
+                  <h3 className="font-serif text-xl sm:text-2xl mb-3">Authentic Indian</h3>
+                  <p className="text-primary-foreground/70 mb-4">Traditional Indian meals and festive thalis prepared with regional flavors, fresh ingredients, and time-honored recipes.</p>
                 </div>
               </div>
               
@@ -487,11 +487,11 @@ export default function Home() {
         </section>
 
         {/* MENU SECTION */}
-        <section id="menu" className="py-16 md:py-24 bg-background">
+        <section id="menu" className="scroll-mt-24 py-16 md:py-24 bg-background">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-4xl mx-auto mb-11 md:mb-14">
               <h4 className="text-secondary font-semibold tracking-[0.22em] uppercase text-xs sm:text-sm mb-4">Our Menus</h4>
-              <h2 className="text-4xl sm:text-5xl md:text-7xl font-semibold leading-[0.96] text-[#1d2b40] mb-5 sm:mb-7">
+              <h2 className="text-3xl sm:text-5xl md:text-7xl font-semibold leading-[0.96] text-[#1d2b40] mb-5 sm:mb-7">
                 Curated <span className="text-secondary">Culinary</span>
                 <br />
                 Selections
@@ -550,7 +550,7 @@ export default function Home() {
                     className="rounded-2xl border border-border bg-white p-5 sm:p-6 shadow-[0_2px_0_rgba(15,23,42,0.02)] hover:shadow-lg hover:-translate-y-0.5 transition-all"
                   >
                     <div className="flex items-start justify-between gap-3 mb-3">
-                      <h4 className="text-xl sm:text-[1.65rem] text-[#1d2b40] leading-tight">{item}</h4>
+                      <h4 className="text-lg sm:text-[1.65rem] text-[#1d2b40] leading-tight break-words">{item}</h4>
                       <span
                         className={`inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold whitespace-nowrap ${badgeClass}`}
                       >
@@ -614,7 +614,7 @@ export default function Home() {
         </section>
 
         {/* REPUTATION SECTION */}
-        <section id="reputation" className="py-16 md:py-24 bg-muted/30">
+        <section id="reputation" className="scroll-mt-24 py-16 md:py-24 bg-muted/30">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-center">
               <div className="lg:col-span-5">
@@ -685,7 +685,7 @@ export default function Home() {
         </section>
 
         {/* CONTACT / CTA SECTION */}
-        <section id="contact" className="py-16 md:py-24 bg-background relative overflow-hidden">
+        <section id="contact" className="scroll-mt-24 py-16 md:py-24 bg-background relative overflow-hidden">
           <div className="absolute top-0 right-0 w-1/3 h-full bg-secondary/5 -skew-x-12 origin-top"></div>
           
           <div className="container mx-auto px-4 md:px-6 relative z-10">
