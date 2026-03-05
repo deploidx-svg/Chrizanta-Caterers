@@ -1,21 +1,13 @@
-import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
-import logo from "@assets/chrizantalogo_1772688493063.png";
+import { MapPin, Phone, Instagram, Facebook } from "lucide-react";
+import BrandLogo from "@/components/BrandLogo";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary text-primary-foreground pt-16 pb-8 border-t border-primary-foreground/10">
+    <footer className="bg-primary text-primary-foreground pt-14 md:pt-16 pb-8 border-t border-primary-foreground/10">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 mb-12">
           <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center p-2">
-                <img src={logo} alt="Chrizanta Caterers Logo" className="w-full h-full object-contain" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-serif text-white">Chrizanta</h3>
-                <p className="text-sm text-secondary uppercase tracking-[0.2em] font-semibold">Caterers</p>
-              </div>
-            </div>
+            <BrandLogo variant="main" tone="light" />
             <p className="text-primary-foreground/70 leading-relaxed max-w-sm">
               Creating unforgettable culinary experiences for weddings, corporate events, and intimate gatherings in Bengaluru.
             </p>
@@ -49,19 +41,19 @@ export default function Footer() {
           <div>
             <h4 className="font-serif text-xl mb-6 text-white border-b border-white/10 pb-2 inline-block">Business Hours</h4>
             <ul className="space-y-3 text-primary-foreground/80">
-              <li className="flex justify-between border-b border-white/5 pb-2">
-                <span>Monday - Saturday</span>
-                <span>9:00 AM - 8:00 PM</span>
+              <li className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-2 gap-1 sm:gap-3">
+                <span>All Days</span>
+                <span>24 / 7 Service</span>
               </li>
-              <li className="flex justify-between pb-2 text-secondary">
-                <span>Sunday</span>
-                <span>On Events Only</span>
+              <li className="flex flex-col sm:flex-row sm:justify-between pb-2 text-secondary gap-1 sm:gap-3">
+                <span>No Weekly Off</span>
+                <span>Always Available</span>
               </li>
             </ul>
           </div>
         </div>
         
-        <div className="text-center pt-8 border-t border-white/10 text-sm text-primary-foreground/50 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="text-center pt-8 border-t border-white/10 text-sm text-primary-foreground/50 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
           <p>&copy; {new Date().getFullYear()} Chrizanta Caterers. All rights reserved.</p>
           <p>Bengaluru's Premium Catering Service</p>
         </div>

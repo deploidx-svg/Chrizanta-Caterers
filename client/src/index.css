@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-sans: 'Outfit', sans-serif;
+  --font-sans: 'Montserrat', sans-serif;
   --font-serif: 'Playfair Display', serif;
 
   --radius-sm: calc(var(--radius) - 4px);
@@ -42,24 +42,24 @@
   --popover: 0 0% 100%;
   --popover-foreground: 222 47% 11%;
 
-  --primary: 202 100% 35%; /* Blue from logo logo */
+  --primary: 204 85% 36%; /* #0E6BA8 */
   --primary-foreground: 210 40% 98%;
 
-  --secondary: 195 100% 45%; /* Lighter cyan-blue from logo glow */
+  --secondary: 198 76% 50%; /* #1EA7E1 */
   --secondary-foreground: 222 47% 11%;
 
   --muted: 210 40% 96%;
   --muted-foreground: 215 16% 47%;
 
-  --accent: 195 100% 95%;
-  --accent-foreground: 202 100% 35%;
+  --accent: 198 85% 94%;
+  --accent-foreground: 204 85% 36%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 210 40% 98%;
 
   --border: 214 32% 91%;
   --input: 214 32% 91%;
-  --ring: 202 100% 35%;
+  --ring: 204 85% 36%;
 
   --radius: 0.5rem;
 }
@@ -74,10 +74,10 @@
   --popover: 222 47% 11%;
   --popover-foreground: 210 40% 98%;
 
-  --primary: 195 100% 45%;
+  --primary: 198 76% 50%;
   --primary-foreground: 222 47% 11%;
 
-  --secondary: 202 100% 35%;
+  --secondary: 204 85% 36%;
   --secondary-foreground: 210 40% 98%;
 
   --muted: 217 33% 18%;
@@ -91,10 +91,13 @@
 
   --border: 217 33% 18%;
   --input: 217 33% 18%;
-  --ring: 195 100% 45%;
+  --ring: 198 76% 50%;
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
   * {
     @apply border-border;
   }
@@ -103,5 +106,14 @@
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif font-semibold;
+  }
+  section[id] {
+    scroll-margin-top: 5.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
