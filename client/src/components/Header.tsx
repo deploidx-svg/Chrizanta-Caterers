@@ -6,16 +6,14 @@ export default function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border/50 transition-all duration-300">
       <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
-        <Link href="/">
-          <a className="flex items-center gap-3">
-            <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center bg-primary/5">
-              <img src={logo} alt="Chrizanta Caterers Logo" className="w-full h-full object-contain mix-blend-multiply" />
-            </div>
-            <div className="hidden sm:block">
-              <h1 className="text-xl font-serif font-bold text-primary tracking-wide">Chrizanta</h1>
-              <p className="text-xs uppercase tracking-[0.2em] text-secondary font-semibold">Caterers</p>
-            </div>
-          </a>
+        <Link href="/" className="flex items-center gap-3">
+          <div className="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center bg-primary/5">
+            <img src={logo} alt="Chrizanta Caterers Logo" className="w-full h-full object-contain mix-blend-multiply" />
+          </div>
+          <div className="hidden sm:block">
+            <h1 className="text-xl font-serif font-bold text-primary tracking-wide">Chrizanta</h1>
+            <p className="text-xs uppercase tracking-[0.2em] text-secondary font-semibold">Caterers</p>
+          </div>
         </Link>
         
         <nav className="hidden md:flex items-center gap-8">

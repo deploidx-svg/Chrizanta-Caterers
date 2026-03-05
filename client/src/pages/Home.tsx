@@ -1,6 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowRight, Star, ChefHat, UtensilsCrossed, CalendarCheck, Quote } from "lucide-react";
+import { ArrowRight, Star, ChefHat, UtensilsCrossed, CalendarCheck, Quote, Phone, MapPin } from "lucide-react";
 import heroImg from "@/assets/images/hero-catering.jpg";
 import vegImg from "@/assets/images/veg-food.jpg";
 import biryaniImg from "@/assets/images/biryani.jpg";
