@@ -88,15 +88,34 @@ app.use((req, res, next) => {
   // ALWAYS serve the app on the port specified in the environment variable PORT
   // Default to 5888 if not specified.
   // this serves both the API and the client.
-  const port = parseInt(process.env.PORT || "5888", 10);
-  httpServer.listen(
-    {
-      port,
-      host: "0.0.0.0",
-      reusePort: true,
-    },
-    () => {
-      log(`serving on port ${port}`);
-    },
-  );
+  const basePort = parseInt(process.env.PORT || "5888", 10);
+  let currentPort = basePort;
+  const host = process.env.HOST || "0.0.0.0";
+  const hasExplicitPort = typeof process.env.PORT === "string" && process.env.PORT.length > 0;
+
+  const listen = () => {
+    httpServer.listen({
+      port: currentPort,
+      host,
+    });
+  };
+
+  httpServer.on("listening", () => {
+    log(`serving on ${host}:${currentPort}`);
+  });
+
+  httpServer.on("error", (error: NodeJS.ErrnoException) => {
+    if (error.code === "EADDRINUSE" && !hasExplicitPort) {
+      const nextPort = currentPort + 1;
+      log(`port ${currentPort} is in use, retrying on ${nextPort}`);
+      currentPort = nextPort;
+      setTimeout(listen, 50);
+      return;
+    }
+
+    console.error("Server failed to start:", error);
+    process.exit(1);
+  });
+
+  listen();
 })();
